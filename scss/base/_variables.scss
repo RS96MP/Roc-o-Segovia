@@ -1,0 +1,28 @@
+$colores:
+white,
+black,
+bisque,
+pink,
+rgb(232, 5, 81),
+rgb(240, 128, 128),
+rgba(255, 0, 0, 0.144),
+red,
+gray solid,
+crimson;
+
+$tipografia-principal: "Italiana", sans-serif;
+$tipografia-secundaria: "Marko One", serif;
+$tipografia-terciaria: 'Times New Roman', Times, serif;
+
+@mixin flex($flex, $justify, $align){
+    display: $flex;
+    justify-content:$justify;
+    align-items: $align;
+}
+
+@mixin wrap($flex, $justify, $align, $wrap){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap;
+}

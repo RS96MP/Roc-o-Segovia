@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam&family=Italiana&display=swap');
+/*?----------RESET----------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.menu-color{
+    background-color:nth($colores, 2);
+}
+
+/*COLOR Y PSEUDOCLASE DE INICIO*/
+.navbar-brand{
+    color:nth($colores, 1);
+}
+.navbar-brand:hover{
+    color:nth($colores, 3);
+}
+
+/*COLOR Y PSEUDOCLASE DE NOSOTRAS*/
+.navbar-nav .nav-link.active{
+    color:nth($colores, 1);
+}
+.navbar-nav .nav-link.active:hover{
+    color:nth($colores, 3);
+}
+
+/*COLOR Y PSEUDOCLASE DE SERVICIOS PROD Y AGENDA*/
+.nav-link{
+    color:nth($colores, 1);
+} 
+.nav-link:hover{
+    color:nth($colores, 3);
+}
+
+/*BOTON PARA DESPLEGAR NAV*/
+.navbar-toggler{
+    background-color:nth($colores, 1);
+}
+.accordion-button:not(.collapsed){
+    color:nth($colores, 2);
+    background-color:nth($colores, 6);
+}
+.fixed img{ /*logo de wpp me siga*/
+    width:50px ;
+    position: fixed;
+    bottom:30px ;
+    right:30px ;
+}
+
+/*-------HEADER-------*/
+header{ 
+    @include flex(flex, space-between, center);
+    background-color:nth($colores, 2);
+    position: sticky; 
+    top: 0; 
+    padding: 2px;
+    z-index: 1;
+    a{
+        img{
+            width:90px;
+            height:90px ;
+        }
+    }
+    h1{
+        font-family: $tipografia-principal;
+        font-weight: 400;
+        font-style: normal;
+        color: nth($colores, 1);
+        font-size:40px;
+    }
+}
+
+.hero{
+                
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+                align-items: center;
+                background-image: url(../img/imgprincipal.webp);
+                width: 100%;
+                height: 500px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed; 
+        h2 {
+            color: nth($colores, 1);
+            font-family: $tipografia-principal;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 50px;
+            margin-bottom: 50px;
+            margin-top: 100px;
+            border: 5px solid nth($colores, 1);
+            padding: 20px;
+            text-align: center;
+
+        }
+
+        a {
+            background-color: nth($colores, 2);
+            color:nth($colores, 1);
+            padding: 10px;
+            font-size: 15px;
+                &:hover {
+                color: nth($colores, 4);
+                transform: scale(1.3);
+            }
+        }
+
+        .boton {
+            background-color: nth($colores, 2);
+            color: nth($colores, 1);
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 10px; 
+            transition: 1s;
+        }
+
+    }
+
+    /*-------FOOTER-------*/
+    footer{ 
+        background-color:nth($colores, 2);
+        display: flex;
+        align-items:center;
+        
+        #redes
+    
+        a{  
+            img{
+    
+            }
+    
+        }
+        img{    
+            width:50px ;
+            height:50px ;
+    
+        }
+    }
+    
+    /*-------CLASE APLICADA A BOOTSTRAP-------*/
+    .horoscopo-1{
+        @include wrap(flex, space-around, center, wrap);
+        margin-bottom: 25px;   
+    }
+    .horoscopo-2{
+        @include wrap(flex, space-around, center, wrap);
+        margin-bottom: 25px;
+    }
+    .horoscopo-3{
+        @include wrap(flex, space-around, center, wrap);
+        margin-bottom: 40px;    
+    }
+    
+    .card-link{ 
+        color: nth($colores, 10);
+        text-decoration: none;
+        font-family: $tipografia-terciaria;
+        font-size: 25px;
+        transition: 1s;
+    }
+    

@@ -1,0 +1,585 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Malayalam&family=Italiana&display=swap");
+/*?----------RESET----------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.menu-color {
+  background-color: black; }
+
+/*COLOR Y PSEUDOCLASE DE INICIO*/
+.navbar-brand {
+  color: white; }
+
+.navbar-brand:hover {
+  color: bisque; }
+
+/*COLOR Y PSEUDOCLASE DE NOSOTRAS*/
+.navbar-nav .nav-link.active {
+  color: white; }
+
+.navbar-nav .nav-link.active:hover {
+  color: bisque; }
+
+/*COLOR Y PSEUDOCLASE DE SERVICIOS PROD Y AGENDA*/
+.nav-link {
+  color: white; }
+
+.nav-link:hover {
+  color: bisque; }
+
+/*BOTON PARA DESPLEGAR NAV*/
+.navbar-toggler {
+  background-color: white; }
+
+.accordion-button:not(.collapsed) {
+  color: black;
+  background-color: lightcoral; }
+
+.fixed img {
+  /*logo de wpp me siga*/
+  width: 50px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px; }
+
+/*-------HEADER-------*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  position: sticky;
+  top: 0;
+  padding: 2px;
+  z-index: 1; }
+  header a img {
+    width: 90px;
+    height: 90px; }
+  header h1 {
+    font-family: "Italiana", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 40px; }
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  background-image: url(../img/imgprincipal.webp);
+  width: 100%;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+  .hero h2 {
+    color: white;
+    font-family: "Italiana", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    margin-bottom: 50px;
+    margin-top: 100px;
+    border: 5px solid white;
+    padding: 20px;
+    text-align: center; }
+  .hero a {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-size: 15px; }
+    .hero a:hover {
+      color: pink;
+      transform: scale(1.3); }
+  .hero .boton {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 1s; }
+
+/*-------FOOTER-------*/
+footer {
+  background-color: black;
+  display: flex;
+  align-items: center; }
+  footer img {
+    width: 50px;
+    height: 50px; }
+
+/*-------CLASE APLICADA A BOOTSTRAP-------*/
+.horoscopo-1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 25px; }
+
+.horoscopo-2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 25px; }
+
+.horoscopo-3 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px; }
+
+.card-link {
+  color: crimson;
+  text-decoration: none;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 25px;
+  transition: 1s; }
+
+main {
+  background: linear-gradient(red, pink, white); }
+  main .elegirme {
+    display: flex;
+    justify-content: left;
+    align-items: center; }
+    main .elegirme div {
+      width: 60%; }
+      main .elegirme div h2 {
+        padding: 20px;
+        color: black;
+        font-family: "Italiana", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 50px;
+        text-align: center; }
+      main .elegirme div p {
+        margin: 30px; }
+      main .elegirme div .parrafo::first-letter {
+        color: #e80551;
+        font-size: 50px; }
+    main .elegirme img {
+      width: 400px;
+      height: 500px; }
+  main .servicios h2 {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    text-transform: uppercase;
+    font-family: "Italiana", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px; }
+  main .servicios .servicios-contenedor {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; }
+    main .servicios .servicios-contenedor div {
+      border: 2px gray solid;
+      border-radius: 10px;
+      /*redondeo de puntas*/
+      width: 303px;
+      /*ancho*/
+      height: 370px;
+      /*alto*/
+      text-align: center;
+      margin: 20px;
+      box-shadow: 0px 10px 23px 24px rgba(0, 0, 0, 0.1);
+      /*sombreado*/
+      background-color: white; }
+      main .servicios .servicios-contenedor div img {
+        width: 300px;
+        height: 250px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px; }
+      main .servicios .servicios-contenedor div h3 {
+        color: pink;
+        font-size: 30px;
+        margin: 10px 15px 20px 15px;
+        font-family: "Marko One", serif;
+        font-weight: 400;
+        font-style: normal; }
+      main .servicios .servicios-contenedor div a {
+        background-color: black;
+        color: white;
+        padding: 10px;
+        font-size: 15px; }
+        main .servicios .servicios-contenedor div a:hover {
+          color: pink; }
+      main .servicios .servicios-contenedor div .boton {
+        background-color: black;
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        border-radius: 10px; }
+  main h4 {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    text-transform: uppercase;
+    font-family: "Italiana", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px; }
+  main .trabajos {
+    display: flex;
+    justify-content: left;
+    align-items: center; }
+    main .trabajos div {
+      width: 60%; }
+      main .trabajos div p {
+        padding: 20px;
+        color: black;
+        font-family: "Italiana", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+        font-size: 50px; }
+    main .trabajos a img {
+      width: 400px;
+      height: 500px; }
+
+/*!--------MAIN PAGINA NOSOTRAS--------*/
+.nosotras-generales h3 {
+  text-align: center;
+  border: 4px solid black;
+  padding: 10px;
+  font-family: "Italiana", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 45px;
+  color: white; }
+
+.nosotras-generales .pag-nosotras {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px; }
+  .nosotras-generales .pag-nosotras .pag-nosotras-1 {
+    width: 50%; }
+    .nosotras-generales .pag-nosotras .pag-nosotras-1 .nosotras {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      font-weight: 350;
+      font-style: normal;
+      font-size: 30px;
+      color: black; }
+      .nosotras-generales .pag-nosotras .pag-nosotras-1 .nosotras:hover {
+        transition: 1s;
+        color: crimson;
+        transform: scale(1.5); }
+    .nosotras-generales .pag-nosotras .pag-nosotras-1 p {
+      font-size: 22px;
+      margin-right: 30px;
+      font-family: "Times New Roman", Times, serif;
+      text-align: center; }
+      .nosotras-generales .pag-nosotras .pag-nosotras-1 p span {
+        color: crimson;
+        font-size: 27px; }
+
+.nosotras-generales .nosotras-datos {
+  margin-left: 50px; }
+  .nosotras-generales .nosotras-datos form div label {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 19px; }
+  .nosotras-generales .nosotras-datos form div input {
+    margin-bottom: 10px;
+    border-radius: 5px; }
+
+/*!----------MAIN PAGINA SERVICIOS----------*/
+.pag-servicios-1 h3 {
+  text-align: center;
+  border: 4px solid black;
+  padding: 10px;
+  font-family: "Italiana", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  color: white; }
+
+.pag-servicios-1 p {
+  margin: 30px;
+  text-align: center;
+  margin-top: 30px;
+  margin-left: 100px;
+  margin-right: 100px;
+  font-size: 25px; }
+
+.pag-servicios-2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; }
+  .pag-servicios-2 div {
+    border: 2px gray solid;
+    border-radius: 10px;
+    /*redondeo de puntas*/
+    width: 303px;
+    /*ancho*/
+    height: 435px;
+    /*alto*/
+    text-align: center;
+    margin: 20px;
+    box-shadow: 0px 10px 23px 24px rgba(0, 0, 0, 0.1);
+    /*sombreado*/
+    background-color: white;
+    transition: 1s; }
+    .pag-servicios-2 div:hover {
+      transform: scale(1.1); }
+    .pag-servicios-2 div img {
+      width: 300px;
+      height: 250px;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px; }
+    .pag-servicios-2 div h4 {
+      font-family: "Marko One", serif;
+      font-size: 25px;
+      margin-top: auto;
+      color: pink; }
+    .pag-servicios-2 div p {
+      padding: 15px;
+      font-size: 20px;
+      font-family: "Times New Roman", Times, serif; }
+
+/*!-----------MAIN PAGINA AGENDA----------*/
+.agenda-generales h3 {
+  text-align: center;
+  border: 4px solid black;
+  padding: 10px;
+  font-family: "Italiana", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 45px;
+  color: white; }
+
+/*!----------MAIN PAGINA PRODUCTOS----------*/
+.productos {
+  display: flex;
+  flex-direction: column; }
+  .productos h3 {
+    text-align: center;
+    border: 4px solid black;
+    padding: 10px;
+    font-family: "Italiana", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 45px;
+    color: white; }
+  .productos p {
+    text-align: center;
+    margin: 30px;
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 25px; }
+
+.galeria {
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 250px;
+  gap: 15px; }
+  .galeria .grid-item {
+    position: relative; }
+    .galeria .grid-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+      box-shadow: 0px 10px 34px 78px rgba(0, 0, 0, 0.1); }
+    .galeria .grid-item h5 {
+      position: absolute;
+      bottom: 0;
+      margin-bottom: 0;
+      margin: auto;
+      color: black;
+      background-color: rgba(255, 0, 0, 0.144);
+      font-size: 40px;
+      font-family: "Times New Roman", Times, serif; }
+      .galeria .grid-item h5:hover {
+        color: white;
+        background-color: red; }
+
+@media screen and (max-width: 1147px) {
+  .trabajos {
+    flex-direction: column; }
+  .trabajos div p {
+    padding: 10px;
+    text-align: justify;
+    font-size: 40px; } }
+
+@media screen and (max-width: 1100px) {
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 230px; }
+  .grid-item {
+    grid-column: span 1;
+    grid-row: span 1; }
+  .libros {
+    grid-row: span 2; } }
+
+@media screen and (max-width: 1090px) {
+  .trabajos img {
+    display: none; } }
+
+@media screen and (max-width: 1060px) {
+  .elegirme {
+    flex-direction: column; }
+  .elegirme div {
+    width: 80%; }
+  .elegirme p {
+    margin-top: 1px;
+    text-align: center; }
+  .elegirme div h2 {
+    padding: 5px; }
+  .elegirme img {
+    display: none; } }
+
+@media screen and (max-width: 920px) {
+  .trabajos div p {
+    padding: 10px;
+    color: black;
+    font-family: "Italiana", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    font-size: 20px; } }
+
+@media screen and (max-width: 893px) {
+  h4 {
+    padding: 5px;
+    font-weight: 200;
+    font-size: 25px; }
+  .servicios h2 {
+    padding: 5px;
+    font-weight: 200;
+    font-size: 25px; }
+  .servicios .servicios-contenedor div {
+    width: 303px;
+    /*ancho*/
+    height: 370px;
+    /*alto*/ }
+  .servicios div img {
+    width: 200px;
+    height: 150px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px; }
+  .servicios .servicios-contenedor div {
+    width: 203px;
+    height: 270px; }
+  h3 {
+    color: deeppink;
+    font-size: 20px;
+    margin: 10px 15px 20px 15px;
+    font-family: "Marko One", serif;
+    font-weight: 200;
+    font-style: normal; } }
+
+@media screen and (max-width: 700px) {
+  .hero h2 {
+    font-size: 40px;
+    padding: 10px;
+    border: 5px solid white; }
+  .hero a {
+    padding: 10px; } }
+
+@media screen and (max-width: 690px) {
+  .parrafo::first-letter {
+    color: darksalmon; } }
+
+@media screen and (max-width: 681) {
+  .hero {
+    height: 300px; } }
+
+@media screen and (max-width: 670px) {
+  .galeria {
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 200px; } }
+
+@media screen and (max-width: 650px) {
+  header {
+    flex-direction: column;
+    position: static; }
+  .elegirme p {
+    text-align: start;
+    margin-left: 1px; } }
+
+@media screen and (max-width: 550px) {
+  .elegirme p {
+    margin-left: 0%;
+    margin-right: 0%;
+    font-size: 15px; } }
+
+@media screen and (max-width: 534px) {
+  .hero h2 {
+    font-size: 35px;
+    padding: 15px; }
+  .hero a {
+    font-size: 18px; }
+  .elegirme div h2 {
+    font-size: 40px;
+    font-weight: 700; }
+  .elegirme p {
+    margin: 0%; } }
+
+@media screen and (max-width: 500px) {
+  .hero h2 {
+    margin-left: 15px;
+    margin-right: 15px;
+    border: 3px solid white; }
+  .hero a {
+    font-size: 18px; } }
+
+@media screen and (max-width: 492px) {
+  .servicios .servicios-contenedor div {
+    width: 203px;
+    height: 270px; }
+  .servicios div img {
+    width: 100px;
+    height: 65px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px; }
+  .servicios .servicios-contenedor div {
+    width: 103px;
+    height: 170px; }
+  h3 {
+    color: deeppink;
+    font-size: 15px;
+    margin: 10px 15px 20px 15px;
+    font-family: "Marko One", serif;
+    font-weight: 150;
+    font-style: normal; }
+  .servicios-contenedor a {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-size: 10px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px; } }
+
+@media screen and (max-width: 400px) {
+  .elegirme p {
+    font-size: 15px; } }
+
+@media screen and (max-width: 410px) {
+  .elegirme p {
+    font-size: 8px; } }
+
+@media screen and (max-width: 396px) {
+  h1 {
+    font-size: 30px; } }

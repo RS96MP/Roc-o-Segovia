@@ -1,0 +1,315 @@
+main {
+    background: linear-gradient(red, pink, white);
+
+    .elegirme{  
+        @include flex(flex, left, center);
+        div{
+            width:60%;
+            h2{
+                padding:20px;
+                color:nth($colores, 2);
+                font-family: $tipografia-principal;
+                font-weight: 400;
+                font-style: normal;
+                font-size:50px;
+                text-align: center;
+            }
+            p{  
+                margin:30px;
+            }
+            .parrafo{
+                &::first-letter{
+                    color:nth($colores, 5) ;
+                    font-size: 50px;
+                }
+            }
+        }
+        img{    
+            width:400px;
+            height:500px;
+        }
+    }
+
+    .servicios{ 
+        h2{ 
+            background-color: nth($colores, 2);
+            color:nth($colores, 1);
+            text-align: center;
+            padding:10px ;
+            margin:auto;
+            text-transform: uppercase;
+            font-family: $tipografia-principal;
+            font-weight: 400;
+            font-style: normal;
+            font-size:40px;
+        }
+        .servicios-contenedor{ 
+            @include wrap(flex, space-around, center, wrap);
+            div{    
+                border:2px nth($colores, 9) ;
+                border-radius: 10px; /*redondeo de puntas*/
+                width:303px ; /*ancho*/
+                height:370px ; /*alto*/
+                text-align: center;
+                margin:20px ;    
+                box-shadow: 0px 10px 23px 24px rgba(0,0,0,0.1); /*sombreado*/
+                background-color:nth($colores, 1);
+                img{    
+                    width: 300px;
+                    height: 250px;
+                    border-top-right-radius: 10px;
+                    border-top-left-radius: 10px;
+                }
+                h3{ 
+                    color: nth($colores, 4);
+                    font-size: 30px;
+                    margin: 10px 15px 20px 15px;
+                    font-family: $tipografia-secundaria;
+                    font-weight: 400;
+                    font-style: normal;
+                }
+                a{  
+                    background-color:nth($colores, 2);
+                    color: nth($colores, 1);
+                    padding: 10px;
+                    font-size: 15px;
+                        &:hover {
+                        color:nth($colores, 4);
+                        }
+                }
+                .boton {
+                    background-color:nth($colores, 2);
+                    color:nth($colores, 1);
+                    padding: 10px;
+                    text-decoration: none;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+
+    h4{ 
+        background-color:nth($colores, 2);
+        color: nth($colores, 1);
+        text-align: center;
+        padding:10px ;
+        margin: auto;
+        text-transform: uppercase;
+        font-family:$tipografia-principal;
+        font-weight: 400;
+        font-style: normal;
+        font-size:40px;
+    }
+
+    .trabajos{ 
+        @include flex(flex, left, center) ;
+        div{    
+            width: 60%;
+            p{  
+                padding:20px;
+                color: nth($colores, 2);
+                font-family:$tipografia-principal;
+                font-weight: 400;
+                font-style: normal;
+                text-align: center;
+                font-size:50px;
+            }
+        }
+        a{
+            img{    
+                width:400px;
+                height:500px;
+            }
+        }
+    }
+}
+
+/*!--------MAIN PAGINA NOSOTRAS--------*/
+
+.nosotras-generales{
+    h3{ 
+        text-align: center;
+        border: 4px solid nth($colores, 2); 
+        padding: 10px;
+        font-family:$tipografia-principal;
+        font-weight: 400;
+        font-style: normal;
+        font-size:45px;
+        color: nth($colores, 1);   
+    }
+    .pag-nosotras{
+        @include flex(flex, center, center);
+        margin: 30px;
+        .pag-nosotras-1{
+            width: 50%;
+            .nosotras{
+                @include flex(flex, center, center); 
+                padding: 10px;
+                font-weight: 350;
+                font-style: normal;
+                font-size:30px;
+                color: nth($colores, 2);   
+                &:hover{
+                    transition: 1s;
+                    color:nth($colores, 10);
+                    transform: scale(1.5);
+                }   
+            }
+            p{
+                font-size: 22px;
+                margin-right: 30px;
+                font-family: $tipografia-terciaria;
+                text-align:center;
+                span{
+                    color:nth($colores, 10) ;
+                    font-size: 27px;
+                }
+            }
+        }
+    }
+    .nosotras-datos{
+        margin-left: 50px;  
+        form{
+            div{
+                label{
+                    font-family: $tipografia-terciaria;
+                    font-size: 19px;
+                }
+                input{
+                    margin-bottom: 10px;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
+
+/*!----------MAIN PAGINA SERVICIOS----------*/
+
+.pag-servicios-1{
+    h3{
+        text-align: center;
+        border: 4px solid nth($colores, 2); 
+        padding: 10px;
+        font-family:$tipografia-principal;
+        font-weight: 400;
+        font-style: normal;
+        font-size:40px;
+        color: nth($colores, 1);
+    }
+    p{
+        margin: 30px;
+        text-align: center;
+        margin-top: 30px;
+        margin-left: 100px;
+        margin-right: 100px;
+        font-size: 25px;
+    }
+}
+.pag-servicios-2{
+    @include wrap(flex, space-around, center, wrap);
+    div{
+        border:2px nth($colores, 9) ;
+        border-radius: 10px; /*redondeo de puntas*/
+        width:303px ; /*ancho*/
+        height:435px ; /*alto*/
+        text-align: center;
+        margin:20px ;    
+        box-shadow: 0px 10px 23px 24px rgba(0,0,0,0.1); /*sombreado*/
+        background-color: nth($colores, 1);
+        transition: 1s; 
+        &:hover{
+            transform: scale(1.1);
+        }
+        img{
+            width: 300px;
+            height: 250px;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+        }
+        h4{
+            font-family:$tipografia-secundaria;
+            font-size: 25px;
+            margin-top:auto;
+            color: nth($colores, 4);
+        }
+        p{
+            padding: 15px;
+            font-size: 20px;
+            font-family: $tipografia-terciaria;
+        }
+    }
+}
+
+/*!-----------MAIN PAGINA AGENDA----------*/
+
+.agenda-generales{
+    h3{
+        text-align: center;
+        border: 4px solid nth($colores, 2); 
+        padding: 10px;
+        font-family:$tipografia-principal;
+        font-weight: 400;
+        font-style: normal;
+        font-size:45px;
+        color: nth($colores, 1);
+    }  
+}
+
+/*!----------MAIN PAGINA PRODUCTOS----------*/
+
+.productos{
+    display: flex; 
+    flex-direction: column;
+    h3{
+        text-align: center;
+        border: 4px solid nth($colores, 2); 
+        padding: 10px;
+        font-family:$tipografia-principal;
+        font-weight: 400;
+        font-style: normal;
+        font-size:45px;
+        color: nth($colores, 1);
+    }
+    p{
+        
+        text-align: center;
+        margin: 30px;
+        margin-top: 30px;
+        margin-left: 100px;
+        margin-right: 100px;
+        font-size: 25px;
+    }
+}
+.galeria{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 250px;
+    gap: 15px;
+    .grid-item{ 
+        position: relative;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+            box-shadow: 0px 10px 34px 78px rgba(0,0,0,0.1);
+        }
+        h5{
+            position: absolute;
+            bottom: 0;
+            margin-bottom: 0;
+            margin: auto;
+            color:nth($colores, 2);
+            background-color:nth($colores, 7);
+            font-size: 40px;
+            font-family:$tipografia-terciaria;
+            &:hover{
+                color: nth($colores, 1);
+                background-color:nth($colores, 8);
+            }
+        }
+    }
+}
