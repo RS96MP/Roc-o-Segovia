@@ -261,15 +261,13 @@ main {
 
 .nosotras-generales .pag-nosotras {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+  align-items: start;
   margin: 30px; }
   .nosotras-generales .pag-nosotras .pag-nosotras-1 {
     width: 50%; }
     .nosotras-generales .pag-nosotras .pag-nosotras-1 .nosotras {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      text-align: center;
       padding: 10px;
       font-weight: 350;
       font-style: normal;
@@ -412,6 +410,10 @@ main {
         color: white;
         background-color: red; }
 
+@media screen and (max-width: 1200px) {
+  .nosotras-generales iframe {
+    display: none; } }
+
 @media screen and (max-width: 1147px) {
   .trabajos {
     flex-direction: column; }
@@ -447,6 +449,26 @@ main {
   .elegirme img {
     display: none; } }
 
+@media screen and (max-width: 1046px) {
+  .nosotras-generales .pag-nosotras .pag-nosotras-1 .nosotras {
+    font-weight: 200;
+    font-size: 22px; }
+  .nosotras-generales .pag-nosotras .pag-nosotras-1 p {
+    font-size: 18px; }
+  .nosotras-generales .pag-nosotras .pag-nosotras-1 p span {
+    font-size: 18px; }
+  .nosotras-generales .pag-nosotras .pag-nosotras-1 {
+    padding-top: 50px;
+    width: 80%; }
+  .nosotras-generales .pag-nosotras .nosotras-datos {
+    margin-left: 100px; }
+  .nosotras-generales .pag-nosotras .nosotras-datos form div label {
+    font-size: 15px; }
+  main .elegirme div p {
+    margin: 10px; }
+  main .elegirme div {
+    width: 100%; } }
+
 @media screen and (max-width: 920px) {
   .trabajos div p {
     padding: 10px;
@@ -462,24 +484,19 @@ main {
     padding: 5px;
     font-weight: 200;
     font-size: 25px; }
-  .servicios h2 {
+  main .servicios h2 {
     padding: 5px;
     font-weight: 200;
-    font-size: 25px; }
-  .servicios .servicios-contenedor div {
-    width: 303px;
-    /*ancho*/
-    height: 370px;
-    /*alto*/ }
-  .servicios div img {
+    font-size: 30px; }
+  main .servicios .servicios-contenedor div img {
     width: 200px;
     height: 150px;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px; }
-  .servicios .servicios-contenedor div {
+  main .servicios .servicios-contenedor div {
     width: 203px;
     height: 270px; }
-  h3 {
+  main .servicios .servicios-contenedor div h3 {
     color: deeppink;
     font-size: 20px;
     margin: 10px 15px 20px 15px;
@@ -487,17 +504,59 @@ main {
     font-weight: 200;
     font-style: normal; } }
 
+@media screen and (max-width: 890px) {
+  main .pag-servicios-1 p {
+    font-size: 20px; } }
+
+@media screen and (max-width: 887px) {
+  main .productos h3 {
+    font-weight: 350;
+    font-size: 40px; }
+  main .productos h3 p {
+    font-size: 23px; } }
+
+@media screen and (max-width: 850px) {
+  main .pag-servicios-2 div {
+    width: 253px;
+    /*ancho*/
+    height: 300px; }
+  main .pag-servicios-2 div img {
+    width: 250px;
+    height: 150px; }
+  main .pag-servicios-2 div h4 {
+    font-size: 20px; }
+  main .pag-servicios-2 div p {
+    font-size: 16px; } }
+
+@media screen and (max-width: 800px) {
+  main .productos h3 {
+    font-size: 30px; } }
+
 @media screen and (max-width: 700px) {
   .hero h2 {
     font-size: 40px;
     padding: 10px;
     border: 5px solid white; }
   .hero a {
-    padding: 10px; } }
+    padding: 10px; }
+  .nosotras-generales .pag-nosotras {
+    flex-wrap: wrap; }
+  .nosotras-generales .pag-nosotras .nosotras-datos {
+    padding-top: 30px; }
+  .nosotras-generales .pag-nosotras .pag-nosotras-1 .nosotras {
+    font-size: 30px; }
+  .nosotras-generales .pag-nosotras .pag-nosotras-1 {
+    margin-bottom: 50px; } }
 
 @media screen and (max-width: 690px) {
   .parrafo::first-letter {
-    color: darksalmon; } }
+    color: darksalmon; }
+  main .pag-servicios-1 p {
+    font-size: 15px; }
+  main .pag-servicios-1 h3 {
+    border: 2px solid black;
+    font-weight: 200;
+    font-size: 30px; } }
 
 @media screen and (max-width: 681) {
   .hero {
@@ -515,6 +574,16 @@ main {
   .elegirme p {
     text-align: start;
     margin-left: 1px; } }
+
+@media screen and (max-width: 630px) {
+  main .productos h3 {
+    font-size: 25px; }
+  main .productos p {
+    font-size: 18px;
+    margin: 15px;
+    margin-top: 15px;
+    margin-left: 50px;
+    margin-right: 50px; } }
 
 @media screen and (max-width: 550px) {
   .elegirme p {
@@ -572,13 +641,35 @@ main {
     text-decoration: none;
     border-radius: 10px; } }
 
-@media screen and (max-width: 400px) {
-  .elegirme p {
-    font-size: 15px; } }
+@media screen and (max-width: 460px) {
+  main .pag-servicios-1 p {
+    font-size: 12px; } }
+
+@media screen and (max-width: 445px) {
+  main .productos h3 {
+    border: solid 2px black;
+    font-size: 18px; }
+  main .productos p {
+    margin: 10px;
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 30px; } }
+
+@media screen and (max-width: 420px) {
+  main .productos p {
+    font-size: 15px;
+    margin: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px; } }
 
 @media screen and (max-width: 410px) {
   .elegirme p {
     font-size: 8px; } }
+
+@media screen and (max-width: 400px) {
+  .elegirme p {
+    font-size: 15px; } }
 
 @media screen and (max-width: 396px) {
   h1 {

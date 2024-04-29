@@ -138,12 +138,12 @@ main {
         color: nth($colores, 1);   
     }
     .pag-nosotras{
-        @include flex(flex, center, center);
+        @include flex(flex, space-around, start);
         margin: 30px;
         .pag-nosotras-1{
             width: 50%;
             .nosotras{
-                @include flex(flex, center, center); 
+                text-align: center; 
                 padding: 10px;
                 font-weight: 350;
                 font-style: normal;
