@@ -260,12 +260,13 @@ main {
   color: white; }
 
 .nosotras-generales .pag-nosotras {
-  display: flex;
-  justify-content: space-around;
-  align-items: start;
   margin: 30px; }
+  .nosotras-generales .pag-nosotras .formulario {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: "Marko One", serif; }
   .nosotras-generales .pag-nosotras .pag-nosotras-1 {
-    width: 50%; }
+    width: 100%; }
     .nosotras-generales .pag-nosotras .pag-nosotras-1 .nosotras {
       text-align: center;
       padding: 10px;
@@ -285,15 +286,6 @@ main {
       .nosotras-generales .pag-nosotras .pag-nosotras-1 p span {
         color: crimson;
         font-size: 27px; }
-
-.nosotras-generales .nosotras-datos {
-  margin-left: 50px; }
-  .nosotras-generales .nosotras-datos form div label {
-    font-family: "Times New Roman", Times, serif;
-    font-size: 19px; }
-  .nosotras-generales .nosotras-datos form div input {
-    margin-bottom: 10px;
-    border-radius: 5px; }
 
 /*!----------MAIN PAGINA SERVICIOS----------*/
 .pag-servicios-1 h3 {
@@ -450,20 +442,6 @@ main {
     display: none; } }
 
 @media screen and (max-width: 1046px) {
-  .nosotras-generales .pag-nosotras .pag-nosotras-1 .nosotras {
-    font-weight: 200;
-    font-size: 22px; }
-  .nosotras-generales .pag-nosotras .pag-nosotras-1 p {
-    font-size: 18px; }
-  .nosotras-generales .pag-nosotras .pag-nosotras-1 p span {
-    font-size: 18px; }
-  .nosotras-generales .pag-nosotras .pag-nosotras-1 {
-    padding-top: 50px;
-    width: 80%; }
-  .nosotras-generales .pag-nosotras .nosotras-datos {
-    margin-left: 100px; }
-  .nosotras-generales .pag-nosotras .nosotras-datos form div label {
-    font-size: 15px; }
   main .elegirme div p {
     margin: 10px; }
   main .elegirme div {
@@ -532,6 +510,10 @@ main {
   main .productos h3 {
     font-size: 30px; } }
 
+@media screen and (max-width: 775px) {
+  .nosotras-generales .pag-nosotras .pag-nosotras-1 p {
+    font-size: 18px; } }
+
 @media screen and (max-width: 700px) {
   .hero h2 {
     font-size: 40px;
@@ -584,6 +566,11 @@ main {
     margin-top: 15px;
     margin-left: 50px;
     margin-right: 50px; } }
+
+@media screen and (max-width: 580px) {
+  .nosotras-generales .pag-nosotras .pag-nosotras-1 p {
+    text-align: start;
+    width: 100%; } }
 
 @media screen and (max-width: 550px) {
   .elegirme p {

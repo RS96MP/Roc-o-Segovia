@@ -52,28 +52,8 @@
     }
 }
 @media screen and (max-width:1046px){
-    .nosotras-generales .pag-nosotras .pag-nosotras-1 .nosotras{
-        font-weight:200 ;
-        font-size: 22px;
-    }
-    .nosotras-generales .pag-nosotras .pag-nosotras-1 p{
-        font-size: 18px;
-        
-    }
-    .nosotras-generales .pag-nosotras .pag-nosotras-1 p span{
-        font-size:18px ;
-    }
-    .nosotras-generales .pag-nosotras .pag-nosotras-1{
-        padding-top: 50px;
-        width: 80%;
-    }
-    .nosotras-generales .pag-nosotras .nosotras-datos{
-        margin-left: 100px;
-
-    }
-    .nosotras-generales .pag-nosotras .nosotras-datos form div label{
-        font-size: 15px;
-    }
+    
+    
     main .elegirme div p{
         margin: 10px;
     }
@@ -160,6 +140,11 @@
         font-size: 30px;
     }
 }
+@media screen and (max-width:775px){
+    .nosotras-generales .pag-nosotras .pag-nosotras-1 p{
+        font-size: 18px;
+    }
+}
 @media screen and (max-width:700px){
     .hero h2{
         font-size:40px;
@@ -233,6 +218,12 @@
         margin-right: 50px;
     }
 
+}
+@media screen and (max-width:580px){
+    .nosotras-generales .pag-nosotras .pag-nosotras-1 p{
+        text-align: start;
+       width:100%;
+    }
 }
 @media screen and (max-width:550px){
     .elegirme p{
